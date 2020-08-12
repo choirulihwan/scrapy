@@ -4,8 +4,7 @@ import scrapy
 from cssselect import Selector
 
 
-
-class SecrethealthSpider(scrapy.Spider):
+class OlxSpider(scrapy.Spider):
     name = 'olx'
     allowed_domains = ['olx.co.id']
     start_urls = ['https://www.olx.co.id/yogyakarta-di_g2000032/mobil-bekas_c198/q-mobil-bekas']
