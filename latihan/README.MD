@@ -9,7 +9,7 @@
 [CREATE SPIDER FOR WEBSITE TARGET]
 - scrapy genspider [spider_name] [url]
 - scrapy genspider rwid 167.172.70.208:9999 /*rwid (example)*/
-- scrapy genspider detik detik.com /*detik (example)*/
+
 
 [START SCRAPING]
 - scrapy crawl [spider_name]
