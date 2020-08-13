@@ -1,6 +1,7 @@
 import scrapy
 
 
+
 class RwidSpider(scrapy.Spider):
     name = 'rwid'
     allowed_domains = ['localhost']
@@ -21,10 +22,11 @@ class RwidSpider(scrapy.Spider):
             response,
             url="http://localhost:5000/login",
             formdata=data,
-            callback=self.after_login,
+            callback=self.after_login
         )
 
     def after_login(self, response):
         # print(response.body)
         yield {"title": response.css("title::text").get()}
         # pass
+        # scrapy.utils.response.open_in_browser(response)
